@@ -170,6 +170,8 @@ button, .btn
     background: #fff
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.05), 0px 10px 20px rgba(255, 255, 255, 0.1)
     color: $accent
+    .btn-icon
+      stroke: $accent
 
   &:focus
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.05), 0px 10px 20px rgba(255, 255, 255, 0.1)
@@ -268,8 +270,10 @@ h6
 
   li
     margin: 0 15px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -1426,6 +1430,7 @@ table
 //callback
 .callback
   padding: 0 0 70px
+
   h2
     font-family: 'Roboto Slab', sans-serif
     max-width: 507px
@@ -1469,17 +1474,19 @@ table
     radius: 4px
   cursor: pointer
   position: relative
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 8px
     height: 5px
 
 .checkbox-inp:checked + .checkbox-custom
   background: $accent
+
   &:before
     background: url("../img/checkbox.svg") no-repeat center
       size: 100%
@@ -1495,24 +1502,28 @@ table
 footer
   background: #F2F2F2
   padding: 30px 0
+
   .list-social
     margin: 20px auto 0
+
     li
       a
         width: 24px
         height: 24px
         fill: #0E80FC
+
         &:hover
           fill: #FFFFFF
+
   .logo
     color: #0083C2
+
   .phone
     font-weight: 500
     font-family: 'Rubik', sans-serif
+
   .phone-icon
     fill: $accent
-
-
 
 
 .footer-menu
@@ -1520,13 +1531,16 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     width: 33.3%
     margin: 0 0 20px
+
     a
       color: #4F4F4F
       font-size: 14px
       font-weight: 500
+
       &:hover
         color: $accent
 
@@ -1581,16 +1595,20 @@ footer
 //.seo-section
 .seo-section
   padding: 20px 0 50px
+
   h3
     font-size: 36px
     font-weight: bold
     margin: 0 0 19px
+
   h4
     font-size: 24px
     font-weight: bold
     margin: 0 0 12px
+
   .box-text
     color: #333333
+
   strong
     font-weight: bold
 
@@ -1626,16 +1644,19 @@ footer
   color: #111
   width: 100%
   height: 360px
+
   &__img
     width: 100%
     height: 100%
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__title
     background: #fff
     position: absolute
@@ -1645,12 +1666,13 @@ footer
     padding: 15px 20px 15px 44px
     display: flex
     align-items: center
+
     &:before
       content: ''
       position: absolute
       left: 30px
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       background: $accent
       width: 4px
       height: 40px
@@ -1666,6 +1688,7 @@ footer
   border-radius: 4px
   padding: 15px 30px 30px 30px
   color: #333
+
   .btn
     margin: 30px 0 0
     max-width: 280px
@@ -1693,19 +1716,25 @@ footer
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1)
   font-size: 20px
   font-weight: bold
+
   strong
     font-size: 24px
     font-weight: 900
 
 //sales
 .sales
-  padding: 30px 0 0
+  padding: 30px 0 20px
+
   .box-text
     font-size: 16px
+    margin: 0 0 30px
+
     p
       margin: 0 0 16px
+
     ul
       margin: 0 0 14px
+
       li
         margin: 0 0 10px
 
@@ -1716,6 +1745,7 @@ footer
   background: $accent
   border-radius: 6px
   padding: 30px 33px 12px
+
   h3
     text-align: center
     width: 100%
@@ -1756,6 +1786,76 @@ footer
   position: absolute
   right: 0
   bottom: 0
+
+.list-dots
+  list-style-type: disc
+  padding: 0 0 0 20px
+
+//articles
+.articles-section
+  padding: 30px 0 20px
+
+.article-box__img
+  position: relative
+  width: 100%
+  height: 240px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 6px
+  overflow: hidden
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09))
+
+.article-box__title
+  width: 100%
+  margin: 0 0 20px
+  font-size: 24px
+  font-weight: bold
+  color: #111
+  &:hover
+    color: $accent
+
+
+.article-box__body
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  max-width: 570px
+  .btn
+    margin: 40px 0 20px
+    height: 32px
+    max-width: 240px
+    font-size: 18px
+    font-weight: bold
+    justify-content: center
+  .btn-icon
+    stroke: #fff
+    fill: none
+    width: 6px
+    height: 16px
+    margin: 0 0 0 24px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.article-box__date
+  font-size: 12px
+  color: #333333
 
 @import "media"
 // Всегда в конце
