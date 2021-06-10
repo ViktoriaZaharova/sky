@@ -104,6 +104,16 @@ $('.portfolio-slider3').slick({
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 });
 
+$('.list-articles-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    dots: true,
+    appendArrows: '.list-articles-slider-nav',
+    appendDots: '.list-articles-slider-nav',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+});
+
 $('.type-product-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -175,4 +185,30 @@ $('.btn-range2').click(function () {
     }
     var currentVal = $(".calculate-range-slider2").slider("value");
     $(".input-range2").val(currentVal);
+});
+
+// mobile menu
+$('.menu-link-dropdown').on('click', function (e) {
+    e.preventDefault();
+
+    var $this = $(this);
+
+    if(!$this.hasClass('open-menu')){
+        $this.addClass('open-menu');
+        $this.parents('.mobile-menu-list').find('.nav-item').fadeOut();
+        $('.dropdown-menu-mobile').fadeIn();
+
+    } else {
+        $this.removeClass('open-menu');
+        $this.parents('.mobile-menu-list').find('.nav-item').fadeIn();
+        $('.dropdown-menu-mobile').fadeOut();
+    }
+});
+
+$('.btn-close').on('click', function () {
+   $('.mobile-menu').fadeOut()
+});
+
+$('.btn-burger-mobile').on('click', function () {
+   $('.mobile-menu').fadeIn();
 });
