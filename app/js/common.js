@@ -7,6 +7,7 @@ function checkHeaderScroll() {
         $(".header-home").addClass("header");
     }
 }
+
 checkHeaderScroll();
 $(window).on("scroll", checkHeaderScroll);
 
@@ -73,33 +74,73 @@ $('.type-ceiling-slider6').slick({
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 });
 
-$( ".calculate-range-slider1" ).slider({
+$('.portfolio-slider1').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    dots: true,
+    appendArrows: '.portfolio-slider-nav1',
+    appendDots: '.portfolio-slider-nav1',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+});
+
+$('.portfolio-slider2').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    dots: true,
+    appendArrows: '.portfolio-slider-nav2',
+    appendDots: '.portfolio-slider-nav2',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+});
+
+$('.portfolio-slider3').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    dots: true,
+    appendArrows: '.portfolio-slider-nav3',
+    appendDots: '.portfolio-slider-nav3',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+});
+
+$('.type-product-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    dots: true,
+    appendArrows: '.type-product-slider-nav',
+    appendDots: '.type-product-slider-nav',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+});
+
+$(".calculate-range-slider1").slider({
     range: "max",
     min: 1,
     max: 100,
     step: 1,
     value: 0,
-    slide: function( event, ui ) {
-        $(".input-range1").val( ui.value );
+    slide: function (event, ui) {
+        $(".input-range1").val(ui.value);
         $(ui.value).val($('.input-range1').val());
         // var value1 = $(".input-range1").val();
         // $(".calculate-range-slider1").find(".ui-slider-handle").text(value1);
     }
 });
 
-$(".input-range1").keyup(function() {
-    $(".calculate-range-slider1").slider("value" , $(this).val());
+$(".input-range1").keyup(function () {
+    $(".calculate-range-slider1").slider("value", $(this).val());
     // var value1 = $(".input-range1").val();
     // $(".calculate-range-slider1").find(".ui-slider-handle").text(value1);
 });
 
-$('.btn-range1').click(function() {
+$('.btn-range1').click(function () {
     var direction = $(this).data("dir");
-    var value =  $(".calculate-range-slider1").slider("value");
+    var value = $(".calculate-range-slider1").slider("value");
     if (direction === "plus") {
-        $(".calculate-range-slider1").slider("value", value+1);
+        $(".calculate-range-slider1").slider("value", value + 1);
     } else {
-        $(".calculate-range-slider1").slider("value", value-1);
+        $(".calculate-range-slider1").slider("value", value - 1);
     }
     var currentVal = $(".calculate-range-slider1").slider("value");
     $(".input-range1").val(currentVal);
@@ -107,30 +148,30 @@ $('.btn-range1').click(function() {
 });
 
 
-$( ".calculate-range-slider2" ).slider({
+$(".calculate-range-slider2").slider({
     range: "max",
     min: 4,
     max: 16,
     step: 1,
     value: 0,
-    slide: function( event, ui ) {
+    slide: function (event, ui) {
         //var value1 = $("#storlekslider").slider("value");
-        $(".input-range2").val( ui.value );
+        $(".input-range2").val(ui.value);
         $(ui.value).val($('.input-range2').val());
     }
 });
 
-$(".input-range2").keyup(function() {
-    $(".calculate-range-slider2").slider("value" , $(this).val());
+$(".input-range2").keyup(function () {
+    $(".calculate-range-slider2").slider("value", $(this).val());
 });
 
-$('.btn-range2').click(function() {
+$('.btn-range2').click(function () {
     var direction = $(this).data("dir");
-    var value =  $(".calculate-range-slider2").slider("value");
+    var value = $(".calculate-range-slider2").slider("value");
     if (direction === "plus") {
-        $(".calculate-range-slider2").slider("value", value+1);
+        $(".calculate-range-slider2").slider("value", value + 1);
     } else {
-        $(".calculate-range-slider2").slider("value", value-1);
+        $(".calculate-range-slider2").slider("value", value - 1);
     }
     var currentVal = $(".calculate-range-slider2").slider("value");
     $(".input-range2").val(currentVal);

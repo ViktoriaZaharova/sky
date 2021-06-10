@@ -194,6 +194,7 @@ button, .btn
     background: #2366AE
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.05), 0px 10px 20px rgba(255, 255, 255, 0.1)
     color: #fff
+    border-color: #2366AE
 
 .btn-border-white
   border: 1px solid #fff
@@ -233,6 +234,19 @@ h2
   width: fit-content
   border-bottom: 4px solid #0E80FC
   padding: 0 20px 4px 0
+
+.border-title
+  position: relative
+  padding: 0 0 8px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    background: #0E80FC
+    width: 230px
+    height: 4px
+
 
 h3
   font-size: 20px
@@ -489,6 +503,8 @@ footer
 .menu-link
   padding: 0
   color: #333333
+  &:hover
+    color: $accent
 
 .header-wrapper
   margin: 0 auto
@@ -1588,14 +1604,14 @@ footer
 
 //section-title
 .section-title
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.75), rgba(14, 128, 252, 0.75)), url("../img/bg2.jpeg") no-repeat center
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.75), rgba(14, 128, 252, 0.75)), url("../img/bg2.jpeg") no-repeat center 8%
     size: cover
   color: #fff
   padding: 39px 0 57px
 
 //.seo-section
 .seo-section
-  padding: 20px 0 50px
+  padding: 30px 0 50px
 
   h3
     font-size: 36px
@@ -1903,6 +1919,137 @@ footer
     width: 100%
     height: 100%
     object-fit: cover
+
+//portfolio-section
+.portfolio-section
+  padding: 50px 0 0
+
+.portfolio-slider-item
+  max-width: 380px
+  width: 100%
+  margin: 0 auto
+
+.portfolio-item
+  margin: 0 0 30px
+  height: 360px
+  width: 100%
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.05)) drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1))
+  border-radius: 4px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.portfolio-section-two
+  margin: 30px 0 0
+
+//page-home
+.page-home
+  padding: 40px 0
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.8), rgba(14, 128, 252, 0.8)), url("../img/product1.jpeg") no-repeat center
+    size: cover
+  color: #fff
+  h1
+    font-size: 36px
+    font-weight: normal
+    font-family: 'Roboto Slab', sans-serif
+    margin: 0 0 18px
+    max-width: 380px
+  .list-advantages
+    justify-content: space-between
+  .list-advantages-item
+    margin: 14px 0 0
+  p
+    font-size: 18px
+  .form
+    flex-direction: column
+    align-items: flex-start
+    h4
+      font-size: 18px
+      font-weight: 500
+    label, .btn
+      max-width: 280px
+    label
+      margin: 20px 0 0
+    .btn
+      margin: 20px 0 0
+    .checkbox
+      color: #fff
+      margin: 8px 0 0
+    .checkbox-custom
+      background: #fff
+      border-color: #fff
+    .checkbox-inp:checked + .checkbox-custom
+      &:before
+        background: url("../img/checkbox2.svg") no-repeat center
+          size: 100%
+
+.video-wrapper
+  margin: 0 auto
+  position: relative
+  max-width: 1120px
+  border-radius: 6px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+
+.btn-play-video
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 161px
+  height: 94px
+  fill: #fff
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  z-index: 1
+
+.type-product-slider__item
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 380px
+  width: 100%
+  margin: 20px auto
+  height: 240px
+  position: relative
+  overflow: hidden
+  border-radius: 6px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09))
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+//price-two
+.price-two
+  .table-price
+    max-width: none
+    margin: 0
+
 
 @import "media"
 // Всегда в конце
