@@ -4,6 +4,7 @@ function checkHeaderScroll() {
         $("header").removeClass('header').addClass("header-fixed");
     } else if ($(window).scrollTop() === 0) {
         $("header").removeClass("header-fixed");
+        $(".header-home").addClass("header");
     }
 }
 checkHeaderScroll();
