@@ -883,6 +883,7 @@ footer {
 .btn-range {
   position: relative;
   width: 12px;
+  min-width: 12px;
   height: 12px;
   cursor: pointer;
   padding: 0;
@@ -1070,9 +1071,7 @@ footer {
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+          align-items: flex-start; }
   .form-calculate-row p {
     font-size: 14px;
     font-weight: 500;
@@ -2614,7 +2613,12 @@ footer {
     min-width: 60px;
     margin: 0 38px 0 0; }
     .decor-line:last-child {
-      margin: 0; } }
+      margin: 0; }
+  .calculate-content {
+    margin: 0 20px 0 0; }
+  .calculate-img {
+    max-width: 180px;
+    top: -60px; } }
 
 @media only screen and (max-width: 991px) {
   .menu {
@@ -2676,7 +2680,10 @@ footer {
     border: none;
     margin: 0 20px 0 0; }
     .certificate-box:last-child {
-      margin: 0; } }
+      margin: 0; }
+  .calculate-content {
+    max-width: 300px;
+    margin: 0 50px 0 0; } }
 
 @media only screen and (max-width: 767px) {
   header .logo-text, header .menu {
@@ -2790,7 +2797,26 @@ footer {
     padding: 0 14px 15px;
     font-size: 14px; }
   .question h2 {
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+  .table td, .table th {
+    padding: 12px 16px; }
+  .table td:last-child, .table th:last-child {
+    padding: 8px;
+    width: 30%; }
+  .mb-50 {
+    margin-bottom: 20px; }
+  .advantages {
+    padding: 30px 0 0; }
+  .calculate-img {
+    display: none; }
+  .calculate-total {
+    max-width: none; }
+  .calculate-content {
+    margin: 0 0 20px;
+    max-width: none;
+    width: 100%; }
+  .calculate-range-slider {
+    max-width: none; } }
 
 @media only screen and (max-width: 576px) {
   .list-advantages-item:last-child {
@@ -2806,7 +2832,26 @@ footer {
     border: none;
     padding: 0 0 20px; }
   .certification-wrapper-bottom {
-    border-radius: 8px; } }
+    border-radius: 8px; }
+  .form-calculate-column {
+    margin: 0;
+    width: 49%; }
+  .form-calculate-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .input-value-item {
+    width: 100%; }
+  .form-calculate {
+    padding: 20px 10px 23px; }
+  .rooms .btn {
+    font-size: 14px;
+    max-width: 140px;
+    background: transparent;
+    border: 1px solid #fff; }
+  .room-item {
+    width: 140px;
+    margin: 0 10px 18px 0; } }
 
 @media only screen and (max-width: 480px) {
   .footer-menu li {
