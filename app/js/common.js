@@ -290,7 +290,7 @@ $('.portfolio-slider3').slick({
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
     responsive: [
         {
-            breakpoint: 991,
+            breakpoint: 767,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -299,43 +299,29 @@ $('.portfolio-slider3').slick({
     ]
 });
 
-// $('.list-articles-slider').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 2,
-//     dots: true,
-//     appendArrows: '.list-articles-slider-nav',
-//     appendDots: '.list-articles-slider-nav',
-//     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-//     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-//     responsive: [
-//         {
-//             breakpoint: 1199,
-//             settings: {
-//                 slidesToShow: 3,
-//                 slidesToScroll: 3,
-//             }
-//         },
-//         {
-//             breakpoint: 840,
-//             settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 2
-//             }
-//         },
-//         {
-//             breakpoint: 576,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1,
-//                 arrows: false,
-//                 dots: false,
-//                 variableWidth: true,
-//                 autoplay: true,
-//                 autoplaySpeed: 2000,
-//             }
-//         }
-//     ]
-// });
+$('.service-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    appendArrows: '.service-slider-nav',
+    appendDots: '.service-slider-nav',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                variableWidth: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        }
+    ]
+});
 
 // slick active
 $(window).on('load resize', function() {
