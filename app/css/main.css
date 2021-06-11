@@ -1217,14 +1217,16 @@ table {
 
 .scheme-of-work-wrapper {
   width: 100%;
+  overflow-x: auto; }
+
+.scheme-of-work-wrapper__scroll {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -1541,9 +1543,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 40px 60px;
+  overflow-x: auto;
   border: 2px solid #fff;
     border-radius: 8px 8px 0px 0px;
   -webkit-filter: drop-shadow(0px 2px 4px rgba(255, 255, 255, 0.05)) drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.1));
@@ -1722,6 +1723,8 @@ table {
 footer {
   background: #F2F2F2;
   padding: 30px 0; }
+  footer .phone {
+    color: #0E80FC; }
   footer .list-social {
     margin: 20px auto 0; }
     footer .list-social li a {
@@ -2593,7 +2596,25 @@ footer {
     width: 31px;
     height: 24px; }
     .btn-burger span {
-      height: 3px; } }
+      height: 3px; }
+  .certification-wrapper-body {
+    padding: 20px; }
+  .gallery-reviews__item {
+    max-width: 80px; }
+  .scheme-of-work-box {
+    min-width: 212px;
+    margin: 0 20px 20px 0;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1); }
+    .scheme-of-work-box .btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .decor-line {
+    min-width: 60px;
+    margin: 0 38px 0 0; }
+    .decor-line:last-child {
+      margin: 0; } }
 
 @media only screen and (max-width: 991px) {
   .menu {
@@ -2619,7 +2640,43 @@ footer {
   .form .btn {
     max-width: 240px; }
   .main {
-    padding: 156px 0 22px; } }
+    padding: 156px 0 22px; }
+  footer {
+    padding: 20px 0 12px; }
+    footer .header-box {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center; }
+    footer .logo-icon {
+      max-width: 180px; }
+    footer .logo {
+      font-size: 13px; }
+    footer .phone-icon {
+      fill: #000000; }
+  .mail {
+    max-width: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .mail-icon {
+    fill: #000000; }
+  .footer-menu {
+    margin: 20px 0 10px; }
+    .footer-menu li {
+      margin: 0 0 14px; }
+  .certification-wrapper-bottom {
+    padding: 14px 0;
+    font-size: 16px; }
+  .certificate-box {
+    min-width: 152px;
+    border: none;
+    margin: 0 20px 0 0; }
+    .certificate-box:last-child {
+      margin: 0; } }
 
 @media only screen and (max-width: 767px) {
   header .logo-text, header .menu {
@@ -2691,6 +2748,48 @@ footer {
     .list-advantages-item:last-child {
       margin: 0 0 10px; }
   .main-form p {
+    margin: 0 0 20px; }
+  .links-doc {
+    margin: 0 auto 20px; }
+  h2 {
+    font-size: 24px;
+    margin: 0 0 10px; }
+  .box-text {
+    font-size: 14px; }
+  .callback {
+    padding: 0 0 30px; }
+    .callback .box-text {
+      font-size: 14px;
+      margin: 0 0 20px; }
+    .callback .form label {
+      margin: 0 0 20px; }
+  .p-50 {
+    padding: 30px 0; }
+  input, textarea, select {
+    font-size: 14px;
+    height: 32px; }
+  .list-articles li {
+    width: 49%;
+    margin: 0 0 20px; }
+  .articles h2 {
+    margin: 0 0 20px; }
+  .articles-item {
+    font-size: 16px; }
+  .certification {
+    padding: 30px 0 25px; }
+    .certification .box-text {
+      font-size: 14px; }
+  .reviews {
+    padding: 0 0 30px; }
+    .reviews .box-text {
+      font-size: 14px; }
+  .question-box-btn {
+    font-size: 18px;
+    padding: 15px 14px; }
+  .question-box .card {
+    padding: 0 14px 15px;
+    font-size: 14px; }
+  .question h2 {
     margin: 0 0 20px; } }
 
 @media only screen and (max-width: 576px) {
@@ -2700,10 +2799,20 @@ footer {
     margin: 0 0 10px;
     max-width: none; }
   .form .btn {
-    max-width: none; } }
+    max-width: none; }
+  .form-callback {
+    max-width: none; }
+  .certification-wrapper-body {
+    border: none;
+    padding: 0 0 20px; }
+  .certification-wrapper-bottom {
+    border-radius: 8px; } }
 
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .footer-menu li {
+    width: 50%; }
+  .list-articles li {
+    width: 100%; } }
 
 @media only screen and (max-width: 420px) {
   header .btn-group {
