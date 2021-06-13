@@ -518,6 +518,36 @@ $('.btn-range2').click(function () {
     $(".input-range2").val(currentVal);
 });
 
+
+$(".calculate-range-slider3").slider({
+    range: "max",
+    min: 1500,
+    max: 6500,
+    step: 1,
+    value: 0,
+    slide: function (event, ui) {
+        //var value1 = $("#storlekslider").slider("value");
+        $(".input-range3").val(ui.value);
+        $(ui.value).val($('.input-range3').val());
+    }
+});
+
+$(".input-range3").keyup(function () {
+    $(".calculate-range-slider3").slider("value", $(this).val());
+});
+
+$('.btn-range3').click(function () {
+    var direction = $(this).data("dir");
+    var value = $(".calculate-range-slider3").slider("value");
+    if (direction === "plus") {
+        $(".calculate-range-slider3").slider("value", value + 1);
+    } else {
+        $(".calculate-range-slider3").slider("value", value - 1);
+    }
+    var currentVal = $(".calculate-range-slider3").slider("value");
+    $(".input-range3").val(currentVal);
+});
+
 // mobile menu
 $('.menu-link-dropdown').on('click', function (e) {
     e.preventDefault();
@@ -542,4 +572,36 @@ $('.btn-close').on('click', function () {
 
 $('.btn-burger-mobile').on('click', function () {
     $('.mobile-menu').fadeIn();
+});
+
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});
+
+
+
+$('.btn-load').on('click', function (e) {
+    e.preventDefault();
+    $('.card-col:hidden').slice(0, 3).slideDown();
+});
+
+$('.btn-filter').on('click', function (e) {
+    e.preventDefault();
+    $('.sidebar-wrap').fadeIn();
+});
+
+$('.btn-close-sidebar').on('click', function () {
+   $('.sidebar-wrap').fadeOut();
 });

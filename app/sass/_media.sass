@@ -222,6 +222,13 @@
   .reviews-slider-item__content
     width: calc(100% - 450px)
 
+  .sidebar-wrap
+    display: none
+    position: absolute
+    left: 0
+    top: -50px
+    z-index: 3
+
 @media only screen and (max-width: 767px)
   header
     .logo-text, .menu
@@ -554,6 +561,22 @@
     .about-slider-wrapper
       margin: 0 -15px
 
+  .nav-tabs-sorting
+    display: none
+
+  .sorting-box
+    p
+      display: none
+
+  .sorting-wrapper
+    height: 41px
+    padding: 0
+    justify-content: center
+
+  .sorting-dropdown
+    margin: 0
+    text-transform: capitalize
+
 @media only screen and (max-width: 650px)
   .list-articles-slider
     li
@@ -672,6 +695,9 @@
     .btn-play
       width: 42px
       height: 28px
+
+  .pagination
+    margin: 0
 
 @media only screen and (max-width: 480px)
   .footer-menu li

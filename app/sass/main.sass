@@ -170,6 +170,7 @@ button, .btn
     background: #fff
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.05), 0px 10px 20px rgba(255, 255, 255, 0.1)
     color: $accent
+
     .btn-icon
       stroke: $accent
 
@@ -238,6 +239,7 @@ h2
 .border-title
   position: relative
   padding: 0 0 8px
+
   &:before
     content: ''
     position: absolute
@@ -313,21 +315,27 @@ header
   background: #fff
   padding: 10px 0
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1)
+
   .btn-group
     margin: 0 auto
 
 .header-fixed
   background: #fff
   position: fixed
+  z-index: 5
+
   .btn-border-white
     border-color: $accent
     color: $accent
+
     &:hover
       background: $accent
       color: #fff
+
   .btn-white
     background: $accent
     color: #fff
+
     &:hover
       background: #fff
       border-color: $accent
@@ -340,6 +348,7 @@ header
   flex-shrink: 0
   color: #fff
   box-shadow: none
+
   .logo
     color: #fff
 
@@ -516,6 +525,7 @@ footer
 .menu-link
   padding: 0
   color: #333333
+
   &:hover
     color: $accent
 
@@ -645,6 +655,7 @@ footer
   align-items: flex-start
   flex-wrap: wrap
   font-size: 18px
+
   input
     font-size: 16px
 
@@ -1147,6 +1158,9 @@ table
     height: 40px
     font-size: 14px
     display: none
+    position: absolute
+    left: 0
+    bottom: 0
 
   &:hover
     .btn
@@ -1172,7 +1186,7 @@ table
   margin: 0 20px 0 0
 
 .scheme-of-work-box__body
-  padding: 10px
+  padding: 10px 10px 50px
 
   p
     font-size: 18px
@@ -1540,8 +1554,10 @@ table
 footer
   background: #F2F2F2
   padding: 30px 0
+
   .phone
     color: #0E80FC
+
   .list-social
     margin: 20px auto 0
 
@@ -1864,6 +1880,7 @@ footer
   font-size: 24px
   font-weight: bold
   color: #111
+
   &:hover
     color: $accent
 
@@ -1875,6 +1892,7 @@ footer
   align-items: flex-start
   justify-content: center
   max-width: 570px
+
   .btn
     margin: 40px 0 20px
     height: 32px
@@ -1882,6 +1900,7 @@ footer
     font-size: 18px
     font-weight: bold
     justify-content: center
+
   .btn-icon
     stroke: #fff
     fill: none
@@ -1899,20 +1918,27 @@ footer
 //article-section
 .article-section
   padding: 50px 0 0
+
   h2
     margin: 0 0 10px
+
   h3
     margin: 0 0 14px
     font-size: 24px
     font-weight: bold
+
   .box-text
     margin: 0 0 20px
+
     p
       margin: 0 0 14px
+
   ul
     margin: 0 0 14px
+
     li
       margin: 0 0 10px
+
       &:last-child
         margin: 0
 
@@ -1933,6 +1959,7 @@ footer
   height: 240px
   width: 100%
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -1941,6 +1968,7 @@ footer
     width: 100%
     height: 100%
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09))
+
   img
     width: 100%
     height: 100%
@@ -1965,6 +1993,7 @@ footer
   align-items: center
   justify-content: center
   overflow: hidden
+
   img
     width: 100%
     height: 100%
@@ -1979,36 +2008,48 @@ footer
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.8), rgba(14, 128, 252, 0.8)), url("../img/product1.jpeg") no-repeat center
     size: cover
   color: #fff
+
   h1
     font-size: 36px
     font-weight: normal
     font-family: 'Roboto Slab', sans-serif
     margin: 0 0 18px
     max-width: 380px
+
   .list-advantages
     justify-content: space-between
+
   .list-advantages-item
     margin: 14px 0 0
+
   p
     font-size: 18px
+
   .form
     flex-direction: column
     align-items: flex-start
+
     h4
       font-size: 18px
       font-weight: 500
+
     label, .btn
       max-width: 280px
+
     label
       margin: 20px 0 0
+
     .btn
       margin: 20px 0 0
+
     .checkbox
       color: #fff
       margin: 8px 0 0
+
     .checkbox-custom
       background: #fff
       border-color: #fff
+
     .checkbox-inp:checked + .checkbox-custom
       &:before
         background: url("../img/checkbox2.svg") no-repeat center
@@ -2020,10 +2061,12 @@ footer
   max-width: 1120px
   border-radius: 6px
   overflow: hidden
+
   img
     width: 100%
     height: 100%
     object-fit: cover
+
   &:before
     content: ''
     position: absolute
@@ -2043,7 +2086,7 @@ footer
   position: absolute
   top: 50%
   left: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   z-index: 1
 
 .type-product-slider__item
@@ -2057,6 +2100,7 @@ footer
   position: relative
   overflow: hidden
   border-radius: 6px
+
   &:before
     content: ''
     position: absolute
@@ -2065,6 +2109,7 @@ footer
     width: 100%
     height: 100%
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09))
+
   img
     width: 100%
     height: 100%
@@ -2100,6 +2145,7 @@ footer
   color: #fff
   padding: 20px 10px 50px
   display: none
+
   .logo
     color: #FFFFFF
     justify-content: center
@@ -2108,28 +2154,37 @@ footer
     font-size: 13px
     width: fit-content
     margin: 0 auto
+
   .logo-icon
     max-width: 180px
+
   .list-social
     margin: 20px auto 0
     justify-content: center
+
     li
       margin: 0 12px 0 0
+
       &:last-child
         margin: 0
+
       a
         fill: #fff
         width: 20px
         height: 20px
+
   .header-box
     flex-direction: row
     justify-content: space-between
     align-items: center
+
   .phone
     color: #fff
     font-size: 16px
+
   .phone-icon
     fill: #fff
+
   .phone-wrapper
     padding: 0 0 0 30px
     margin: 0
@@ -2146,6 +2201,7 @@ footer
   width: 100%
   margin: 20px auto 80px
   font-size: 18px
+
   li
     width: 100%
     margin: 0
@@ -2155,13 +2211,16 @@ footer
       color: #fff
       padding: 10px 0
       border-bottom: 1px solid #FFFFFF
+
       &:hover
         color: $grey
+
     .dropdown-menu-item__links
       width: fit-content
       padding: 8px 0
       border-bottom: 2px solid #fff
       margin: 0 0 8px
+
   .icon-arrow
     fill: none
     stroke: #fff
@@ -2182,7 +2241,7 @@ footer
 
 .open-menu.menu-link-dropdown
   .icon-arrow
-    transform: scale(-1,1)
+    transform: scale(-1, 1)
     margin: 0 10px
     order: -1
 
@@ -2195,6 +2254,7 @@ footer
   width: 20px
   height: 20px
   z-index: 2
+
   &:before, &:after
     content: ''
     position: absolute
@@ -2203,8 +2263,10 @@ footer
     background: #fff
     top: 0
     right: 10px
+
   &:before
     transform: rotate(135deg)
+
   &:after
     transform: rotate(45deg)
 
@@ -2222,7 +2284,7 @@ footer
   width: 100%
   top: 100% !important
   left: 50% !important
-  transform: translate(-50%,0) !important
+  transform: translate(-50%, 0) !important
 
 .dropdown-menu-max__wrapper
   width: 100%
@@ -2238,6 +2300,7 @@ footer
   color: #111111
   padding: 0 0 8px
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -2251,6 +2314,7 @@ footer
   margin: 0 0 20px
   font-size: 18px
   font-weight: 500
+
   &:last-child
     margin: 0
 
@@ -2259,6 +2323,7 @@ footer
   width: 100%
   color: #333333
   border-bottom: 1px solid #F2F2F2
+
   &:hover
     color: $accent
     border-color: $accent
@@ -2267,6 +2332,7 @@ footer
 .map
   width: 100%
   height: 414px
+
   iframe
     width: 100%
     height: 100%
@@ -2276,16 +2342,20 @@ footer
   font-weight: 500
   color: #111111
   margin: 0 0 25px
+
   h3
     color: $accent
     font-size: 26px
     font-weight: bold
     margin: 0 0 7px
+
   a
     margin: 0 0 10px
     color: #111111
+
     &:last-child
       margin: 0
+
   strong
     font-weight: 600
     max-width: 180px
@@ -2297,6 +2367,7 @@ footer
     align-items: flex-start
     justify-content: space-between
     flex-wrap: wrap
+
     p
       text-align: right
       max-width: 213px
@@ -2304,10 +2375,12 @@ footer
 //service-slider
 .service-slider
   width: 100%
+
   .type-product-slider__item
     max-width: none
     height: 360px
     margin: 0 0 20px
+
     &:before
       filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.05)) drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1))
 
@@ -2322,6 +2395,7 @@ footer
   padding: 20px
   width: 100%
   height: fit-content
+
   h3
     font-weight: bold
     font-size: 24px
@@ -2332,25 +2406,33 @@ footer
   width: 100%
   font-size: 18px
   font-weight: 500
+
   li
     border-bottom: 1px solid #F2F2F2
+
     &:last-child
       border: none
+
     a
       padding: 12px 10px
       color: #333333
+
       &:hover
         color: $accent
 
 .service-page
   .box-text
     margin: 0 0 20px
+
     p
       margin: 0 0 14px
+
       &:last-child
         margin: 0
+
     ul
       font-weight: 500
+
       li
         margin: 0 0 14px
 
@@ -2372,6 +2454,7 @@ footer
   .box-text
     margin: 0 0 44px
     max-width: 580px
+
   h2
     margin: 0 0 14px
 
@@ -2382,16 +2465,19 @@ footer
   border-radius: 10px
   height: 100%
   padding: 20px 20px 45px
+
   h3
     margin: 0 0 12px
     font-size: 24px
     font-weight: bold
     color: #333
+
   h4
     margin: 0 0 14px
     font-size: 18px
     font-weight: 500
     color: #333
+
   input
     width: 100%
     border: 1px solid #DADADA
@@ -2399,8 +2485,10 @@ footer
     height: 32px
     padding: 0 10px
     font-size: 14px
+
     &::placeholder
       color: #4F4F4F
+
   h5
     font-weight: 500
     margin: 0 0 14px
@@ -2410,8 +2498,10 @@ footer
   font-size: 14px
   margin: 0 0 8px
   color: #1B1B25
+
   &:last-child
     margin: 0
+
   .checkbox-custom
     background: #fff
     width: 18px
@@ -2419,9 +2509,11 @@ footer
     min-width: 18px
     margin: 0 10px 0 0
     border: 2px solid #DADADA
+
   .checkbox-inp:checked + .checkbox-custom
     background: #fff
     border: 2px solid $accent
+
     &:before
       background: url("../img/checkbox2.svg") no-repeat center
         size: 100%
@@ -2463,6 +2555,7 @@ footer
     height: 100%
     justify-content: space-between
     align-items: center
+
     .btn
       margin: 20px 0 0
       height: 56px
@@ -2471,6 +2564,7 @@ footer
       padding: 0
       max-width: 48%
       border-radius: 10px
+
       &:first-child
         border-radius: 10px
 
@@ -2478,8 +2572,10 @@ footer
 .variable-pay
   h2
     margin: 0 0 16px
+
   .box-text
     margin: 0 0 20px
+
   h3
     font-size: 24px
     font-weight: bold
@@ -2492,6 +2588,7 @@ footer
   border-radius: 4px
   width: 100%
   padding: 30px 20px 27px
+
   h4
     text-align: center
     width: 100%
@@ -2531,16 +2628,20 @@ footer
   align-items: center
   flex-wrap: wrap
   margin: 30px 0
+
   label, .btn
     max-width: 280px
+
   input
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1)
     background: #fff
     height: 42px
     padding: 0 20px
     font-size: 16px
+
     &::placeholder
       color: #333
+
   .btn
     height: 42px
     font-size: 16px
@@ -2557,6 +2658,7 @@ footer
   justify-content: center
   overflow: hidden
   border-radius: 10px
+
   img
     width: 100%
     height: 100%
@@ -2585,6 +2687,7 @@ footer
   justify-content: center
   position: relative
   height: 650px
+
   &:before
     content: ''
     position: absolute
@@ -2595,15 +2698,17 @@ footer
     object-fit: cover
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
     z-index: 1
+
   img
     width: 100%
     height: 100%
     object-fit: cover
+
   .btn-play
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 161px
     height: 94px
     z-index: 2
@@ -2621,10 +2726,12 @@ footer
   margin: 0 auto
   border-radius: 2px
   overflow: hidden
+
   img
     width: 100%
     height: 100%
     object-fit: cover
+
   &:before
     content: ''
     position: absolute
@@ -2634,11 +2741,12 @@ footer
     height: 100%
     z-index: 1
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+
   .btn-play
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     fill: #fff
     z-index: 2
     width: 76px
@@ -2648,12 +2756,15 @@ footer
   width: 100%
   position: relative
   padding: 0 20px
+
   .slick-arrow
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
+
   .slick-prev
     left: 0
+
   .slick-next
     right: 0
 
@@ -2661,10 +2772,12 @@ footer
 .certification-two
   background: transparent
   color: #111111
+
   .certification-wrapper-bottom
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1)
     border: 1px solid #0E80FC
       radius: 8px
+
   h2
     font-weight: 600
 
@@ -2675,11 +2788,13 @@ footer
   color: #fff
   text-align: center
   padding: 20px 0 30px
+
   .box-text
     font-size: 18px
     max-width: 712px
     width: 100%
     margin: 0 auto
+
   h2
     margin: 0 auto 10px
 
@@ -2690,6 +2805,7 @@ footer
   height: 56px
   font-size: 20px
   font-weight: bold
+
   .btn-icon
     width: 24px
     height: 24px
@@ -2702,6 +2818,7 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
+
   .about-slider-max__item
     max-width: 841px
     border-radius: 6px
@@ -2711,11 +2828,13 @@ footer
 .reviews-slider-item__content
   width: calc(100% - 841px)
   padding: 0 50px 0 0
+
   .price
     color: $accent
     margin: 54px 0 0
     font-size: 24px
     font-weight: bold
+
   .box-text
     color: #828282
     font-size: 14px
@@ -2724,10 +2843,12 @@ footer
   display: flex
   align-items: center
   margin: 0 0 17px
+
   h3
     font-weight: 500
     font-size: 16px
     margin: 0 0 13px
+
   .list-rating
     margin: 0
 
@@ -2747,8 +2868,565 @@ footer
 .reviews-slider-max
   margin: 0 0 30px
 
+//.catalog
+.catalog
+  padding: 50px 0 20px
+
+  .container
+    position: relative
+
+  h1
+    margin: 0 0 30px
+    position: relative
+    font-size: 36px
+    font-weight: 600
+    border-left: 4px solid $accent
+    padding: 0 0 0 20px
+    line-height: 1.2
+
+.sidebar-item
+  background: #fff
+  width: 100%
+  margin: 0 0 20px
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05), 1px 6px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  padding: 10px 0
+
+  .btn-group
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 20px 0
+
+    .btn
+      height: 32px
+      max-width: 160px
+      font-weight: bold
+      padding: 0
+      width: 100%
+      margin: 0 auto 14px
 
 
+.btn-clear
+  text-decoration: underline
+  margin: 0 auto
+  color: #333333
+  font-size: 14px
+  font-weight: bold
+
+.sidebar-item-menu
+  width: 100%
+  padding: 0 7px 0 10px
+
+  ul
+    padding: 0 0 0 10px
+    margin: 10px 0 0
+
+    ul
+      margin: 8px 0 0
+
+      a
+        color: #4F4F4F
+        font-size: 16px
+
+        .sidebar-item-menu__val
+          font-size: 10px
+
+    a
+      color: #333333
+      font-size: 17px
+      font-weight: normal
+
+      &:hover
+        color: $accent
+
+      .sidebar-item-menu__val
+        font-size: 12px
+
+  li
+    margin: 0 0 10px
+
+.sidebar-item-menu__links
+  font-size: 20px
+  font-weight: 600
+  color: #111
+
+
+.sidebar-item-menu__val
+  display: inline-block
+  color: #828282
+  font-size: 14px
+  margin: 0 0 0 4px
+  font-weight: normal
+
+.sidebar-item-box
+  width: 100%
+  padding: 10px 20px
+  border-bottom: 1px solid #E0E0E0
+
+  .card-body
+    padding: 0
+    border: none
+      radius: 0
+
+  .checkbox
+    margin: 0 0 8px
+
+    &:last-child
+      margin: 0
+
+  .calculate-range
+    flex-wrap: wrap
+    margin: 0 0 10px
+
+  .calculate-range-slider
+    max-width: 166px
+
+.price-range-values
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 14px 0
+
+.price-range-values__item
+  border: 1px solid #BDBDBD
+    radius: 4px
+  max-width: 110px
+  width: 100%
+  height: 32px
+  display: flex
+  align-items: center
+  padding: 0 10px
+  color: #4F4F4F
+  font-weight: normal
+
+  input
+    margin: 0
+    color: #4F4F4F
+    font-size: 14px
+    background: transparent
+    border-radius: 0
+    height: auto
+    width: calc(100% - 20px)
+    text-align: left
+    padding: 0 0 0 5px
+    font-weight: normal
+
+
+.sidebar-item-box__btn
+  width: 100%
+  padding: 0
+  border: none
+    radius: 0
+  background: transparent
+  margin: 0 0 14px
+  position: relative
+  font-size: 20px
+  font-weight: 500
+  color: #333333
+  text-align: left
+  justify-content: flex-start
+  display: flex
+  align-items: center
+
+  &:after
+    content: ''
+    margin: 0 0 0 auto
+    width: 12px
+    height: 6px
+    background: url("../img/arrow-bottom.svg") no-repeat center
+      size: 100%
+    display: inline-block
+
+.sidebar-item-box__btn.collapsed
+  &:after
+    transform: rotate(180deg)
+
+.sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  background: #fff
+  margin: 0 0 20px
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05), 1px 6px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  padding: 9px 30px 11px
+
+
+.sorting-box
+  display: flex
+  align-items: center
+  color: #333333
+  font-size: 14px
+  margin: 0 6px 0 0
+
+.sorting-dropdown
+  color: #0E80FC
+  margin: 0 0 0 6px
+
+.sorting-dropdown.show
+  .sorting-dropdown__links
+    &:after
+      transform: rotate(180deg)
+
+.sorting-dropdown__links
+  display: flex
+  align-items: center
+
+  &:after
+    background: url("../img/arrow-bottom-blue.svg") no-repeat center
+      size: 100%
+    border: none
+    width: 8px
+    height: 4px
+
+.nav-tabs-sorting
+  border: none
+
+  li
+    margin: 0 10px 0 0
+
+    &:last-child
+      margin: 0
+
+  .nav-link
+    width: 20px
+    height: 20px
+    padding: 0
+    border: none
+      radius: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: #828282
+
+  .active
+    fill: #000000
+
+.card-product
+  width: 100%
+  position: relative
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15)
+  border-radius: 4px
+  height: 100%
+  padding: 0 0 10px
+
+.card-product__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 220px
+  overflow: hidden
+
+.card-product__body
+  padding: 20px
+
+.card-product__title
+  margin: 0 0 14px
+  font-size: 18px
+  font-weight: 500
+  color: #333333
+
+  &:hover
+    color: $accent
+
+.card-product__price
+  width: 100%
+  font-size: 24px
+  font-weight: 800
+  color: #111111
+  margin: 14px 0 0
+
+.card-product__footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 20px 20px
+
+  .btn
+    max-width: 120px
+    height: 32px
+    padding: 0
+    width: 100%
+
+.amount
+  display: flex
+  align-items: center
+  justify-content: center
+
+  input
+    width: 32px
+    height: 32px
+    min-width: 32px
+    padding: 0
+    border: 1px solid #0E80FC
+      radius: 6px
+    text-align: center
+    margin: 0 10px
+    font-size: 20px
+    font-weight: 500
+    color: #333333
+
+    &::placeholder
+      color: #333333
+
+  span
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 12px
+    height: 12px
+    min-width: 12px
+    cursor: pointer
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      background: $accent
+
+    &:before
+      width: 100%
+      height: 2px
+
+  .up
+    &:after
+      width: 2px
+      height: 100%
+
+
+.btn-availability
+  position: absolute
+  top: 20px
+  right: 20px
+  width: 24px
+  height: 24px
+  border: none
+  background: transparent
+  cursor: pointer
+  z-index: 2
+
+  &:hover
+    .tooltip-text
+      display: flex
+
+.tooltip-text
+  position: absolute
+  top: -17px
+  background: #fff
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 4px
+  height: 24px
+  padding: 9px
+  left: 12px
+  white-space: nowrap
+  font-size: 12px
+  align-items: center
+  justify-content: center
+  display: none
+  transition: .3s ease
+
+  &:after
+    content: ''
+    position: absolute
+    left: 4px
+    bottom: -4px
+    border-top: 4px solid #fff
+    border-left: 2px solid transparent
+    border-right: 2px solid transparent
+
+.btn-availability-yes
+  fill: #A5CB02
+
+.btn-availability-no
+  fill: #D84C4C
+
+.card-col
+  display: none
+
+  &:nth-child(-n+12)
+    display: block
+
+.btn-load
+  margin: 10px auto 0
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05), 1px 6px 20px rgba(0, 0, 0, 0.1)
+  width: 100%
+  padding: 0
+  font-size: 20px
+  font-weight: 500
+  height: 40px
+  color: #111111
+
+  &:hover
+    background: $accent
+
+.pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  margin: 20px auto 0
+
+  li
+    margin: 0 3px 0 0
+
+    &:last-child
+      margin: 0
+
+    &:nth-child(2)
+      margin: 0 20px 0 0
+
+    &:nth-last-child(2)
+      margin: 0 0 0 10px
+
+    &:nth-last-child(3)
+      margin: 0 0 0 10px
+
+    a
+      border: none
+      padding: 3px 7px
+      color: #111111
+      font-size: 14px
+      font-weight: normal
+      border-radius: 6px
+
+      &:hover
+        color: #fff
+        background: $accent
+
+    .svg-icon
+      fill: none
+      stroke: $accent
+
+    .page-links-arrow-double, .page-links-arrow
+      &:hover
+        background: transparent
+
+.page-links-arrow-double
+  .svg-icon
+    width: 13px
+    height: 14px
+
+
+.page-links-arrow
+
+  .svg-icon
+    width: 7px
+    height: 14px
+
+.btn-filter
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05), 1px 6px 20px rgba(0, 0, 0, 0.1)
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #111111
+  font-size: 14px
+  font-weight: 500
+  border-radius: 4px
+  height: 41px
+  width: 100%
+
+.sidebar-catalog-top
+  margin: 0 0 13px
+  align-items: center
+
+  h3
+    font-size: 24px
+    font-weight: 600
+
+.btn-close-sidebar
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  position: relative
+  cursor: pointer
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: #111111
+    border-radius: 1px
+    left: 10px
+    top: 0
+    width: 4px
+    height: 100%
+
+  &:before
+    transform: rotate(135deg)
+
+  &:after
+    transform: rotate(45deg)
+
+.table-catalog-head
+  width: 100%
+
+  font-size: 20px
+  font-weight: 500
+  border-bottom: 1px solid #C4C4C4
+  display: flex
+  align-items: center
+  .td
+    width: 160px
+    background: #FFFFFF
+    padding: 8px 20px 10px
+    text-align: center
+    &:first-child
+      text-align: left
+      width: 380px
+      border-radius: 4px 0px 0px 0px
+
+.card-product-row
+  display: flex
+  align-items: center
+  padding: 18px 20px 22px
+  box-shadow: none
+  border-radius: 0
+  border-bottom: 1px solid #C4C4C4
+  .btn-availability
+    top: 10px
+    left: 10px
+    right: auto
+    width: 12px
+    height: 12px
+  .card-product__img
+    height: 43px
+    max-width: 80px
+    width: 100%
+  .card-product__title
+    width: 280px
+    margin: 0
+    padding: 0 0 0 20px
+  .card-product__price
+    margin: 0
+    width: 160px
+    text-align: center
+    font-size: 20px
+  .amount
+    width: 160px
+  .btn-card
+    width: 120px
+    height: 32px
+    padding: 0
+
+.card-row
+  display: none
+  &:nth-child(-n+12)
+    display: none
+  &:nth-last-child(-n+19)
+    display: block
 
 @import "media"
 // Всегда в конце
