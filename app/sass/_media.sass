@@ -83,6 +83,29 @@
     height: 270px
     font-size: 16px
 
+  .about-slider-wrapper
+    padding: 10px 10px 20px
+
+  .about-slider-preview__item
+    max-width: 250px
+    .btn-play
+      width: 48px
+      height: 49px
+
+  .reviews-slider-item
+    .about-slider-max__item
+      max-width: 650px
+      height: 400px
+      .btn-play
+        width: 120px
+        height: 70px
+
+  .reviews-slider-item__content
+    width: calc(100% - 650px)
+    padding: 0 30px 0 0
+    .price
+      margin: 30px 0 0
+
 @media only screen and (max-width: 991px)
   .menu
     font-size: 14px
@@ -187,6 +210,17 @@
       max-width: none
       font-size: 14px
       margin: 0 0 20px
+
+  .about-slider-preview__item
+    width: 220px
+    height: 150px
+
+  .reviews-slider-item
+    .about-slider-max__item
+      max-width: 450px
+
+  .reviews-slider-item__content
+    width: calc(100% - 450px)
 
 @media only screen and (max-width: 767px)
   header
@@ -466,6 +500,60 @@
     .btn
       margin: 20px 0 0
 
+  .about-img
+    height: auto
+
+  .about-slider-preview__item
+    height: 116px
+    max-width: 189px
+    margin: 0 20px 0 0
+
+  .about-slider-preview, .reviews-slider-preview
+    padding: 0
+
+  .about-slider-wrapper
+    margin: 30px -15px 0
+    width: calc(100% + 30px)
+
+  .about-slider-max__item
+    height: 207px
+    .btn-play
+      width: 42px
+      height: 28px
+
+  .about-slider-max
+    margin: 0 0 15px
+
+  .contract .box-text
+    font-size: 14px
+
+  .contract h2
+    font-size: 36px
+
+  .reviews-slider-item
+    .about-slider-max__item
+      max-width: none
+      order: -1
+      height: 300px
+      margin: 0 0 14px
+
+  .reviews-slider-item__content
+    width: 100%
+    padding: 0
+    .box-text
+      ul
+        li
+          display: inline-block
+      br
+        display: none
+    .price
+      margin: 20px 0 0
+
+  .reviews-section
+    padding: 0 0 30px
+    .about-slider-wrapper
+      margin: 0 -15px
+
 @media only screen and (max-width: 650px)
   .list-articles-slider
     li
@@ -569,6 +657,21 @@
 
   .variable-pay-box
     padding: 30px 10px 17px
+
+  .about-img
+    height: 116px
+    width: calc(100% + 30px)
+    margin: 0 -15px
+
+  .about-section
+    .box-text
+      font-size: 14px
+
+  .reviews-slider-item .about-slider-max__item
+    height: 207px
+    .btn-play
+      width: 42px
+      height: 28px
 
 @media only screen and (max-width: 480px)
   .footer-menu li

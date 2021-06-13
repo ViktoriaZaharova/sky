@@ -2548,6 +2548,205 @@ footer
     width: 100%
     margin: 0 0 0 20px
 
+//.about-section
+.about-img
+  width: 100%
+  height: 428px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-radius: 10px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about-section
+  .box-text
+    margin: 20px 0 0
+
+.about-slider-wrapper
+  width: 100%
+  background: #fff
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 6px
+  padding: 30px
+
+.about-slider-max
+  width: 100%
+  margin: 0 0 38px
+
+
+.about-slider-max__item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  height: 650px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+    z-index: 1
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  .btn-play
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 161px
+    height: 94px
+    z-index: 2
+    fill: #fff
+
+.about-slider-preview__item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  max-width: 303px
+  height: 184px
+  cursor: pointer
+  margin: 0 auto
+  border-radius: 2px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+  .btn-play
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    fill: #fff
+    z-index: 2
+    width: 76px
+    height: 76px
+
+.about-slider-preview, .reviews-slider-preview
+  width: 100%
+  position: relative
+  padding: 0 20px
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+  .slick-prev
+    left: 0
+  .slick-next
+    right: 0
+
+//certification-two
+.certification-two
+  background: transparent
+  color: #111111
+  .certification-wrapper-bottom
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1)
+    border: 1px solid #0E80FC
+      radius: 8px
+  h2
+    font-weight: 600
+
+//contract
+.contract
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.75), rgba(14, 128, 252, 0.75)), url("../img/bg2.jpeg") center 8%
+    size: cover
+  color: #fff
+  text-align: center
+  padding: 20px 0 30px
+  .box-text
+    font-size: 18px
+    max-width: 712px
+    width: 100%
+    margin: 0 auto
+  h2
+    margin: 0 auto 10px
+
+.btn-download
+  margin: 30px auto 0
+  max-width: 280px
+  width: 100%
+  height: 56px
+  font-size: 20px
+  font-weight: bold
+  .btn-icon
+    width: 24px
+    height: 24px
+    margin: 0 20px 0 0
+
+
+//reviews section
+.reviews-slider-item
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .about-slider-max__item
+    max-width: 841px
+    border-radius: 6px
+    height: 490px
+    overflow: hidden
+
+.reviews-slider-item__content
+  width: calc(100% - 841px)
+  padding: 0 50px 0 0
+  .price
+    color: $accent
+    margin: 54px 0 0
+    font-size: 24px
+    font-weight: bold
+  .box-text
+    color: #828282
+    font-size: 14px
+
+.reviews-slider-item__top
+  display: flex
+  align-items: center
+  margin: 0 0 17px
+  h3
+    font-weight: 500
+    font-size: 16px
+    margin: 0 0 13px
+  .list-rating
+    margin: 0
+
+.user-ava
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  overflow: hidden
+  margin: 0 24px 0 0
+  width: 54px
+  height: 54px
+  min-width: 54px
+  background: #C4C4C4
+
+
+.reviews-slider-max
+  margin: 0 0 30px
+
 
 
 
