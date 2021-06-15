@@ -1,6 +1,37 @@
 @import "vars"
 
 
+@media only screen and (max-width: 1800px)
+  .portfolio-photo-slider-preview
+    width: calc(100% - 900px)
+    left: 55%
+
+  .portfolio-photo-slider-preview-nav
+    left: 54%
+
+@media only screen and (max-width: 1560px)
+  .portfolio-slider__item-content
+    width: 50%
+    padding: 20px 20px 170px
+
+  .portfolio-photo-slider
+    width: 50%
+
+  .portfolio-photo-slider-preview
+    width: 50%
+    left: auto
+    right: 0
+    padding: 0 20px
+    max-width: none
+
+  .portfolio-photo-slider-preview-nav
+    max-width: none
+    padding: 0 20px
+    left: auto
+    right: 0
+    bottom: 22px
+    width: 50%
+
 @media only screen and (max-width: 1199px)
   .menu li
     margin: 0 20px 0 0
@@ -228,6 +259,47 @@
     left: 0
     top: -50px
     z-index: 3
+
+  .list-characteristics
+    width: 100%
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    li
+      &:last-child
+        p
+          &:before
+            display: block
+
+  .portfolio-slider__item
+    flex-direction: column
+    align-items: flex-start
+
+  .portfolio-photo-slider
+    order: 1
+    height: 280px
+    width: 100%
+    max-width: none
+
+  .portfolio-slider__item-content
+    width: 100%
+    padding: 20px 10px 160px
+
+  .portfolio-photo-slider-preview
+    width: 100%
+    padding: 0 10px
+    bottom: 358px
+
+  .portfolio-photo-slider__item
+    width: 110px
+    margin: 0 20px 0 0
+
+  .portfolio-photo-slider-preview-nav
+    padding: 0 10px
+    bottom: 314px
+    width: 100%
+    left: 0
+    right: 0
 
 @media only screen and (max-width: 767px)
   header
@@ -576,6 +648,15 @@
   .sorting-dropdown
     margin: 0
     text-transform: capitalize
+
+  .total-price-project
+    margin: 14px 0 0
+
+  .portfolio-slider-info__title
+    font-size: 24px
+
+  .portfolio-slider__item-content h3
+    font-size: 20px
 
 @media only screen and (max-width: 650px)
   .list-articles-slider

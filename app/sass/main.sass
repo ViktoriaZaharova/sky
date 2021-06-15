@@ -3428,5 +3428,201 @@ footer
   &:nth-last-child(-n+19)
     display: block
 
+//portfolio
+.portfolio
+  background: #0855A9
+  color: #fff
+  position: relative
+
+.portfolio-photo-slider
+  width: 850px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+.portfolio-content
+  padding: 20px
+
+.portfolio-slider-info
+  .text-p
+    font-weight: 500
+    color: #E6E6E6
+    margin: 0 0 10px
+
+.portfolio-slider-info__title
+  font-size: 36px
+  font-weight: bold
+  margin: 0 0 20px
+
+.portfolio-slider__item
+  display: flex
+  align-items: stretch
+  justify-content: center
+
+.portfolio-slider__item-content
+  width: 700px
+  padding: 30px 0 170px 50px
+  h3
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 20px
+  .btn
+    width: 100%
+    height: 42px
+    font-size: 20px
+    font-weight: bold
+    max-width: 250px
+    padding: 0
+  h4
+    font-size: 16px
+    font-weight: 500
+    color: #E6E6E6
+    margin: 0 0 13px
+
+.portfolio-photo-slider-preview
+  position: absolute
+  bottom: 66px
+  padding: 0 20px 0 0
+  width: calc(100% - 850px)
+  max-width: 700px
+  left: 56%
+  .slick-current
+    .portfolio-photo-slider__item
+      &:before
+        opacity: 0
+      span
+        opacity: 0
+
+.portfolio-photo-slider__item
+  position: relative
+  max-width: 110px
+  width: 100%
+  height: 80px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+  font-size: 14px
+  font-weight: bold
+  text-align: center
+  margin: 0 auto
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(8, 85, 169, 0.35), rgba(8, 85, 169, 0.35)), linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35))
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  span
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+
+.portfolio-slider__item-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 20px
+  .present
+    margin: 0
+    font-size: 20px
+    font-weight: bold
+    display: flex
+    align-items: center
+    font-family: $default-font
+    width: fit-content
+    p
+      font-weight: bold
+  .present-icon
+    width: 30px
+    height: 35px
+    position: relative
+    margin: 0 20px 0 0
+
+
+.total-price-project
+  display: flex
+  align-items: center
+  p
+    color: rgba(255, 255, 255, 0.95)
+    font-size: 18px
+    font-weight: normal
+    margin: 0 20px 0 0
+  strong
+    font-size: 24px
+    font-weight: bold
+
+.characteristics-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 30px
+
+.list-characteristics
+  width: 49%
+  li
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+      p
+        &:before
+          display: none
+  p
+    color: rgba(255, 255, 255, 0.95)
+    font-size: 18px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -7px
+      width: 100px
+      height: 1px
+      background: #fff
+  span
+    font-weight: 500
+    font-size: 20px
+    white-space: nowrap
+
+.portfolio-photo-slider-preview-nav
+  padding: 0 50px 20px
+  width: calc(100% - 850px)
+  max-width: 700px
+  position: absolute
+  left: 54%
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  .svg-icon
+    fill: #0E80FC
+  .slick-arrow
+    background: #fff
+    width: 24px
+    height: 24px
+    border-radius: 4px
+    padding: 5px
+  .slick-next
+    margin: 0 0 0 20px
+
 @import "media"
 // Всегда в конце
