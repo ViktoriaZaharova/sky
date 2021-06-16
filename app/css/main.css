@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Geometria";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Geometria/Geometria.eot");
+  src: url("../fonts/Geometria/Geometria.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria.woff") format("woff"), url("../fonts/Geometria/Geometria.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -720,8 +727,28 @@ footer {
   .form .btn {
     max-width: 290px;
     height: 58px;
-    width: 100%;
-    font-size: 16px; }
+    width: 100%; }
+
+.main .form input {
+  font-size: 18px;
+  padding: 0 24px;
+  font-family: 'Geometria', sans-serif;
+  height: 58px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff; }
+  .main .form input::-webkit-input-placeholder {
+    color: #fff; }
+  .main .form input::-moz-placeholder {
+    color: #fff; }
+  .main .form input::-ms-input-placeholder {
+    color: #fff; }
+  .main .form input::placeholder {
+    color: #fff; }
+
+.main .btn {
+  font-size: 18px; }
 
 .slider-nav {
   width: 100%;
