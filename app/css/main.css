@@ -1,9 +1,44 @@
 @font-face {
   font-family: "Geometria";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Geometria/Geometria-Light.eot");
+  src: url("../fonts/Geometria/Geometria-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria-Light.woff") format("woff"), url("../fonts/Geometria/Geometria-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Geometria";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Geometria/Geometria.eot");
   src: url("../fonts/Geometria/Geometria.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria.woff") format("woff"), url("../fonts/Geometria/Geometria.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Geometria/Geometria-Medium.eot");
+  src: url("../fonts/Geometria/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria/Geometria-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Geometria/Geometria-Bold.eot");
+  src: url("../fonts/Geometria/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria/Geometria-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Geometria/Geometria-ExtraBold.eot");
+  src: url("../fonts/Geometria/Geometria-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria/Geometria-ExtraBold.woff") format("woff"), url("../fonts/Geometria/Geometria-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PFAgoraSlabPro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.eot");
+  src: url("../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.woff") format("woff"), url("../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.ttf") format("truetype"); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -45,7 +80,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: normal;
-  font-family: "Lato", sans-serif;
+  font-family: "Geometria", sans-serif;
   font-weight: normal; }
 
 html, body {
@@ -79,7 +114,7 @@ input, textarea, select {
   padding: 0 11px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Geometria", sans-serif;
   font-size: 14px;
   color: #111111;
   background: #fff;
@@ -108,7 +143,7 @@ button, .btn {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   padding: 0;
-  font-family: "Lato", sans-serif; }
+  font-family: "Geometria", sans-serif; }
   button:hover, button:focus, .btn:hover, .btn:focus {
     outline: none;
     -webkit-box-shadow: none;
@@ -204,7 +239,7 @@ button, .btn {
   font-weight: bold; }
 
 .font-600 {
-  font-weight: 600; }
+  font-weight: 700; }
 
 .font-500 {
   font-weight: 500; }
@@ -224,7 +259,8 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   width: 100%;
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  font-family: "PFAgoraSlabPro", sans-serif; }
 
 .title-decor {
   width: -webkit-fit-content;
@@ -649,7 +685,7 @@ footer {
     background-size: cover;
   color: #fff; }
   .main h1 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "PFAgoraSlabPro", sans-serif;
     font-size: 48px;
     font-weight: normal; }
   .main p {
@@ -1003,7 +1039,7 @@ footer {
     height: 42px;
     max-width: 280px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0;
     width: 100%; }
   .form-calculate .description {
@@ -1064,7 +1100,7 @@ footer {
     max-width: 200px;
     width: 100%;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0;
     height: 32px;
     border-radius: 6px;
@@ -1086,7 +1122,7 @@ footer {
           justify-content: center;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
   max-width: 159px;
   width: 100%;
@@ -1678,7 +1714,7 @@ table {
 .callback {
   padding: 0 0 70px; }
   .callback h2 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "PFAgoraSlabPro", sans-serif;
     max-width: 507px; }
   .callback .box-text {
     font-size: 18px;
@@ -1766,8 +1802,7 @@ footer {
   footer .logo {
     color: #0083C2; }
   footer .phone {
-    font-weight: 500;
-    font-family: 'Rubik', sans-serif; }
+    font-weight: 500; }
   footer .phone-icon {
     fill: #0E80FC; }
 
@@ -2021,7 +2056,6 @@ footer {
     width: 100%;
     font-size: 30px;
     font-weight: 500;
-    font-family: 'Rubik', sans-serif;
     max-width: 230px;
     margin: 0 auto 40px; }
 
@@ -2051,7 +2085,6 @@ footer {
   width: 100%;
   font-size: 30px;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
   margin: 45px 0 0; }
 
 .present-icon {
@@ -2262,7 +2295,7 @@ footer {
   .page-home h1 {
     font-size: 36px;
     font-weight: normal;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "PFAgoraSlabPro", sans-serif;
     margin: 0 0 18px;
     max-width: 380px; }
   .page-home .list-advantages {
@@ -2629,7 +2662,7 @@ footer {
     .contacts-box a:last-child {
       margin: 0; }
   .contacts-box strong {
-    font-weight: 600;
+    font-weight: 700;
     max-width: 180px; }
 
 .list-requisites li {
@@ -2861,7 +2894,7 @@ footer {
     text-align: center;
     width: 100%;
     margin: 0 auto 12px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px; }
 
 .variable-pay-box__icon {
@@ -2929,7 +2962,7 @@ footer {
   .form-installment .btn {
     height: 42px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     width: 100%;
     margin: 0 0 0 20px; }
 
@@ -3076,7 +3109,7 @@ footer {
     border: 1px solid #0E80FC;
       border-radius: 8px; }
   .certification-two h2 {
-    font-weight: 600; }
+    font-weight: 700; }
 
 .contract {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.13))), -webkit-gradient(linear, left bottom, left top, from(rgba(14, 128, 252, 0.75)), to(rgba(14, 128, 252, 0.75))), url("../img/bg2.jpeg") center 8%;
@@ -3177,7 +3210,7 @@ footer {
     margin: 0 0 30px;
     position: relative;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
     border-left: 4px solid #0E80FC;
     padding: 0 0 0 20px;
     line-height: 1.2; }
@@ -3243,7 +3276,7 @@ footer {
 
 .sidebar-item-menu__links {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: #111; }
 
 .sidebar-item-menu__val {
@@ -3688,7 +3721,7 @@ footer {
           align-items: center; }
   .sidebar-catalog-top h3 {
     font-size: 24px;
-    font-weight: 600; }
+    font-weight: 700; }
 
 .btn-close-sidebar {
   display: -webkit-box;
@@ -3929,7 +3962,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: "Lato", sans-serif;
+    font-family: "Geometria", sans-serif;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
@@ -4074,10 +4107,13 @@ footer {
   .form label, .form .btn {
     max-width: 240px; }
   .form .btn {
-    height: 32px;
+    height: 40px;
     font-size: 14px; }
   .form input {
     font-size: 14px; }
+  .main .form input {
+    height: 40px;
+    font-size: 16px; }
   input, textarea, select {
     height: 32px; }
   .btn-burger {
@@ -4152,7 +4188,7 @@ footer {
   .phone {
     font-size: 16px; }
   header .btn {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0 6px; }
   header .logo-text {
     display: none; }
@@ -4287,7 +4323,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center; }
   header .btn {
-    font-size: 14px;
+    font-size: 13px;
     padding: 0;
     max-width: 140px;
     width: 100%; }
