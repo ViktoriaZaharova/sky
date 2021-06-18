@@ -679,19 +679,19 @@ footer {
           order: 1; }
 
 .main {
-  padding: 180px 0 117px;
+  padding: 162px 0 92px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.13))), -webkit-gradient(linear, left bottom, left top, from(rgba(14, 128, 252, 0.59)), to(rgba(14, 128, 252, 0.59))), url("../img/bg1.jpeg") no-repeat center bottom;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.59), rgba(14, 128, 252, 0.59)), url("../img/bg1.jpeg") no-repeat center bottom;
     background-size: cover;
   color: #fff; }
   .main h1 {
     font-family: "PFAgoraSlabPro", sans-serif;
-    font-size: 48px;
-    font-weight: normal; }
+    font-size: 66px;
+    font-weight: bold; }
   .main p {
-    font-size: 24px;
-    margin: 20px 0 45px;
-    max-width: 680px;
+    font-size: 26px;
+    margin: 5px 0 38px;
+    max-width: 1038px;
     width: 100%; }
 
 .list-advantages {
@@ -704,7 +704,7 @@ footer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 14px; }
+  font-size: 18px; }
 
 .list-advantages-item {
   display: -webkit-box;
@@ -713,11 +713,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px 50px 0; }
+  margin: 0 0 50px 0;
+  width: 33.3%;
+  padding: 0 30px 0 0; }
   .list-advantages-item:last-child {
     margin: 0 0 50px; }
   .list-advantages-item span {
-    max-width: 195px;
     width: 100%; }
 
 .list-advantages-item__icon {
@@ -740,9 +741,31 @@ footer {
   width: 100%; }
   .main-form p {
     width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 30px; }
+  .main-form .form label {
+    max-width: 340px; }
+  .main-form .form .checkbox {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 30px 0 0;
+    color: #fff;
     font-size: 18px;
-    font-weight: 500;
-    margin: 0 0 24px; }
+    max-width: none;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main-form .form .checkbox-custom {
+    width: 32px;
+    height: 32px;
+    min-width: 32px; }
+    .main-form .form .checkbox-custom:before {
+      width: 15px;
+      height: 12px; }
 
 .form {
   width: 100%;
@@ -4174,7 +4197,19 @@ footer {
     width: calc(100% - 650px);
     padding: 0 30px 0 0; }
     .reviews-slider-item__content .price {
-      margin: 30px 0 0; } }
+      margin: 30px 0 0; }
+  .main-form .form label {
+    max-width: 220px; }
+  .main-form .form .checkbox {
+    margin: 10px 0 0;
+    font-size: 16px; }
+  .main-form .form .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    min-width: 20px; }
+    .main-form .form .checkbox-custom:before {
+      width: 10px;
+      height: 8px; } }
 
 @media only screen and (max-width: 991px) {
   .menu {
@@ -4312,7 +4347,12 @@ footer {
     bottom: 314px;
     width: 100%;
     left: 0;
-    right: 0; } }
+    right: 0; }
+  .list-advantages-item {
+    width: 100%;
+    padding: 0; }
+  .list-advantages {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 767px) {
   header .logo-text, header .menu {
@@ -4601,7 +4641,19 @@ footer {
   .portfolio-slider-info__title {
     font-size: 24px; }
   .portfolio-slider__item-content h3 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .main-form .form label {
+    max-width: none; }
+  .main-form .form .checkbox {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+    margin: 0 0 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+    font-size: 14px; } }
 
 @media only screen and (max-width: 650px) {
   .list-articles-slider li {

@@ -595,20 +595,20 @@ footer
 
 //.main
 .main
-  padding: 180px 0 117px
+  padding: 162px 0 92px
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), linear-gradient(0deg, rgba(14, 128, 252, 0.59), rgba(14, 128, 252, 0.59)), url("../img/bg1.jpeg") no-repeat center bottom
     size: cover
   color: #fff
 
   h1
     font-family: $title-font
-    font-size: 48px
-    font-weight: normal
+    font-size: 66px
+    font-weight: bold
 
   p
-    font-size: 24px
-    margin: 20px 0 45px
-    max-width: 680px
+    font-size: 26px
+    margin: 5px 0 38px
+    max-width: 1038px
     width: 100%
 
 
@@ -617,18 +617,19 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
-  font-size: 14px
+  font-size: 18px
 
 .list-advantages-item
   display: flex
   align-items: center
-  margin: 0 30px 50px 0
-
+  margin: 0 0 50px 0
+  width: 33.3%
+  padding: 0 30px 0 0
   &:last-child
     margin: 0 0 50px
 
   span
-    max-width: 195px
+
     width: 100%
 
 .list-advantages-item__icon
@@ -646,9 +647,28 @@ footer
 
   p
     width: 100%
-    font-size: 18px
-    font-weight: 500
-    margin: 0 0 24px
+    font-size: 22px
+    font-weight: bold
+    margin: 0 0 30px
+  .form
+    label
+      max-width: 340px
+    .checkbox
+      width: 100%
+      order: 1
+      margin: 30px 0 0
+      color: #fff
+      font-size: 18px
+      max-width: none
+      text-align: center
+      justify-content: center
+    .checkbox-custom
+      width: 32px
+      height: 32px
+      min-width: 32px
+      &:before
+        width: 15px
+        height: 12px
 
 .form
   width: 100%

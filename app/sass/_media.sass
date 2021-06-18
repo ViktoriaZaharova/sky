@@ -140,6 +140,21 @@
     .price
       margin: 30px 0 0
 
+  .main-form
+    .form
+      label
+        max-width: 220px
+      .checkbox
+        margin: 10px 0 0
+        font-size: 16px
+      .checkbox-custom
+        width: 20px
+        height: 20px
+        min-width: 20px
+        &:before
+          width: 10px
+          height: 8px
+
 @media only screen and (max-width: 991px)
   .menu
     font-size: 14px
@@ -303,6 +318,14 @@
     width: 100%
     left: 0
     right: 0
+
+  .list-advantages-item
+    width: 100%
+    padding: 0
+
+
+  .list-advantages
+    font-size: 16px
 
 @media only screen and (max-width: 767px)
   header
@@ -660,6 +683,16 @@
 
   .portfolio-slider__item-content h3
     font-size: 20px
+
+  .main-form .form
+    label
+      max-width: none
+    .checkbox
+      order: initial
+      margin: 0 0 20px
+      justify-content: flex-start
+      text-align: left
+      font-size: 14px
 
 @media only screen and (max-width: 650px)
   .list-articles-slider
