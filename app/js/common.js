@@ -637,3 +637,26 @@ $('.btn-filter').on('click', function (e) {
 $('.btn-close-sidebar').on('click', function () {
    $('.sidebar-wrap').fadeOut();
 });
+
+// добавить комнату
+$('.js--add-tab').on('click', function() {
+    let add_button = $(this);
+    let index = add_button.index();
+    add_button.before('<div class="room-item">' + (index + 1) + ' комната</div>');
+    // $('.tabs__content_container').append('<div class="tabs__content tabs__content' + (index + 1) + '">' + room_html + '</div>')
+    // $('.tabs__content:last-child').find('.slider-horisontal').each(function() {
+    //     let slider = $(this);
+    //     init_slider(slider);
+    // });
+
+    // let count = $("div.rooms .room-item").length - 2;
+    // $(".inp-square").last().attr('name', 'indexcalc_square[' + count + ']');
+    // $(".inp-angle").last().attr('name', 'indexcalc_angle[' + count + ']');
+    // $(".inp-trumpet").last().attr('name', 'trumpet[' + count + ']');
+    // $(".inp-lights").last().attr('name', 'lights[' + count + ']');
+    // $(".rezult__sum-1").last().removeClass().addClass('rezult__sum-1 rezult__sum-1-' + count);
+    // $(".rezult__sum-2").last().removeClass().addClass('rezult__sum-2 rezult__sum-2-' + count);
+    // calc();
+
+    return false;
+});

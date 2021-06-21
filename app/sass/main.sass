@@ -1428,14 +1428,17 @@ table
 
 .certification-wrapper-body
   width: 100%
-  display: flex
-  align-items: flex-start
-  justify-content: space-between
   padding: 40px 60px
-  overflow-x: auto
   border: 2px solid #fff
     radius: 8px 8px 0px 0px
   filter: drop-shadow(0px 2px 4px rgba(255, 255, 255, 0.05)) drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.1))
+
+.certification-wrapper-scroll
+  width: 100%
+  display: flex
+  overflow-x: auto
+  align-items: flex-start
+  justify-content: space-between
 
 .certificate-box
   border: 6px solid #FFFFFF
@@ -1447,6 +1450,7 @@ table
   overflow: hidden
   max-width: 152px
   width: 100%
+  outline: none
 
 .certification-wrapper-bottom
   width: 100%
@@ -2054,7 +2058,8 @@ footer
 
   .list-advantages-item
     margin: 14px 0 0
-
+    width: 50%
+    padding: 0
   p
     font-size: 18px
 
@@ -2067,18 +2072,33 @@ footer
       font-weight: 500
 
     label, .btn
-      max-width: 280px
-
+      max-width: 340px
+    input
+      font-size: 18px
+      padding: 0 24px
+      border: 1px solid #fff
+        radius: 5px
+      background: transparent
+      color: #fff
+      &::placeholder
+        color: #fff
     label
       margin: 20px 0 0
 
     .btn
       margin: 20px 0 0
-
+      font-size: 18px
     .checkbox
       color: #fff
       margin: 8px 0 0
-
+      font-size: 18px
+    .checkbox-custom
+      width: 32px
+      height: 32px
+      min-width: 32px
+      &:before
+        width: 15px
+        height: 12px
     .checkbox-custom
       background: #fff
       border-color: #fff
@@ -2094,6 +2114,7 @@ footer
   max-width: 1120px
   border-radius: 6px
   overflow: hidden
+  max-height: 650px
 
   img
     width: 100%
@@ -2174,7 +2195,7 @@ footer
   height: 100%
   overflow-y: auto
   background: #0E80FC
-  z-index: 3
+  z-index: 7
   color: #fff
   padding: 20px 10px 50px
   display: none
@@ -3580,6 +3601,7 @@ footer
     width: fit-content
     p
       font-weight: bold
+      line-height: 1
   .present-icon
     width: 30px
     height: 35px
