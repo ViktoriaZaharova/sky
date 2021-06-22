@@ -923,9 +923,6 @@ footer
   width: 100%
   color: #333333
   padding: 30px 30px 26px
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
 
   button
     height: 42px
@@ -940,6 +937,14 @@ footer
     color: #828282
     font-size: 10px
     font-weight: 500
+
+.tabs__content
+  display: none
+  flex-wrap: wrap
+  width: 100%
+
+.tabs__content.active
+  display: flex
 
 .calculate-img
   position: absolute
@@ -978,6 +983,8 @@ footer
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+  position: relative
+  z-index: 1
 
   .btn
     max-width: 200px
@@ -1003,6 +1010,7 @@ footer
   max-width: 159px
   width: 100%
   height: 32px
+  cursor: pointer
 
 .form-calculate-row
   width: 100%
@@ -2621,6 +2629,10 @@ footer
 
       &:first-child
         border-radius: 10px
+
+
+
+
 
 //variable-pay
 .variable-pay

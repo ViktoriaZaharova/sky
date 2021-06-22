@@ -623,7 +623,6 @@ $('.up').on("click",function () {
 });
 
 
-
 $('.btn-load').on('click', function (e) {
     e.preventDefault();
     $('.card-col:hidden').slice(0, 3).slideDown();
@@ -638,18 +637,134 @@ $('.btn-close-sidebar').on('click', function () {
    $('.sidebar-wrap').fadeOut();
 });
 
+// слайдеры
+let room_html = $('.tabs__content.active').html();
+
+$('.slider-horisontal').each(function() {
+    let slider = $(this);
+    init_slider(slider);
+});
+
+function init_slider(slider) {
+    let container = slider.closest('.slider_container');
+    let input_cur_val = $(container).find('.inp-slider-val');
+    let min = Number(slider.data('min'));
+    let max = Number(slider.data('max'));
+    let start = Number(slider.data('current'));
+    slider = slider.get(0);
+
+    noUiSlider.create(slider, {
+        step: 1,
+        behaviour: 'tap-drag',
+        tooltips: true,
+        start: start,
+        connect: 'lower',
+        range: {
+            'min': min,
+            'max': max
+        },
+        format: wNumb({
+            decimals: 0,
+            thousand: ' '
+        })
+    });
+
+    slider.noUiSlider.on('update', function(values, handle) {
+        input_cur_val.val(values[handle]);
+        calc();
+    });
+
+    input_cur_val.on('input', function() {
+        let input = $(this);
+        if (timeout_link) {
+            clearTimeout(timeout_link)
+        }
+        timeout_link = setTimeout(function() {
+            slider.noUiSlider.set(input.val());
+        }, 500);
+    })
+}
+
+// табы в калькуляторе
+$('ul.tabs__caption').on('click', 'li:not(.active):not(.add-tab)', function() {
+    $(this).addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+});
+
 // добавить комнату
 $('.js--add-tab').on('click', function() {
     let add_button = $(this);
     let index = add_button.index();
-    add_button.before('<div class="room-item">' + (index + 1) + ' комната</div>');
-    // $('.tabs__content_container').append('<div class="tabs__content tabs__content' + (index + 1) + '">' + room_html + '</div>')
-    // $('.tabs__content:last-child').find('.slider-horisontal').each(function() {
-    //     let slider = $(this);
-    //     init_slider(slider);
-    // });
+    add_button.before('<li class="room-item">' + (index + 1) + ' комната</li>');
+    $('.tabs__content_container').append('<div class="tabs__content tabs__content' + (index + 1) + '">' + room_html + '</div>')
+    $('.tabs__content:last-child').find('.calculate-range-slider').each(function() {
+        // let slider = $(this);
+        // init_slider(slider);
+        $(".calculate-range-slider1").slider({
+            range: "max",
+            min: 1,
+            max: 100,
+            step: 1,
+            value: 0,
+            slide: function (event, ui) {
+                $(".input-range1").val(ui.value);
+                $(ui.value).val($('.input-range1').val());
+                // var value1 = $(".input-range1").val();
+                // $(".calculate-range-slider1").find(".ui-slider-handle").text(value1);
+            }
+        });
 
-    // let count = $("div.rooms .room-item").length - 2;
+        $(".input-range1").keyup(function () {
+            $(".calculate-range-slider1").slider("value", $(this).val());
+            // var value1 = $(".input-range1").val();
+            // $(".calculate-range-slider1").find(".ui-slider-handle").text(value1);
+        });
+
+        $('.btn-range1').click(function () {
+            var direction = $(this).data("dir");
+            var value = $(".calculate-range-slider1").slider("value");
+            if (direction === "plus") {
+                $(".calculate-range-slider1").slider("value", value + 1);
+            } else {
+                $(".calculate-range-slider1").slider("value", value - 1);
+            }
+            var currentVal = $(".calculate-range-slider1").slider("value");
+            $(".input-range1").val(currentVal);
+            // $(".calculate-range-slider1").find(".ui-slider-handle").text(currentVal);
+        });
+
+
+        $(".calculate-range-slider2").slider({
+            range: "max",
+            min: 4,
+            max: 16,
+            step: 1,
+            value: 0,
+            slide: function (event, ui) {
+                //var value1 = $("#storlekslider").slider("value");
+                $(".input-range2").val(ui.value);
+                $(ui.value).val($('.input-range2').val());
+            }
+        });
+
+        $(".input-range2").keyup(function () {
+            $(".calculate-range-slider2").slider("value", $(this).val());
+        });
+
+        $('.btn-range2').click(function () {
+            var direction = $(this).data("dir");
+            var value = $(".calculate-range-slider2").slider("value");
+            if (direction === "plus") {
+                $(".calculate-range-slider2").slider("value", value + 1);
+            } else {
+                $(".calculate-range-slider2").slider("value", value - 1);
+            }
+            var currentVal = $(".calculate-range-slider2").slider("value");
+            $(".input-range2").val(currentVal);
+        });
+    });
+
+    // let count = $("ul.tabs__caption li").length - 2;
     // $(".inp-square").last().attr('name', 'indexcalc_square[' + count + ']');
     // $(".inp-angle").last().attr('name', 'indexcalc_angle[' + count + ']');
     // $(".inp-trumpet").last().attr('name', 'trumpet[' + count + ']');

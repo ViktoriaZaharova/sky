@@ -467,79 +467,82 @@
         <div class="row">
           <div class="col-12"><h2>Online - калькулятор</h2></div>
 
+
           <div class="col-12">
-            <div class="rooms">
-              <div class="room-item">1 комната</div>
-              <a href="#" class="btn btn-accent js--add-tab">Добавить комнату</a>
+            <div class="tabs">
+              <ul class="tabs__caption rooms">
+                <li class="room-item">1 комната</li>
+                <li class="btn btn-accent js--add-tab">Добавить комнату</li>
+              </ul>
+
+              <form method="post" class="form-calculate tabs__content_container">
+                <div class="calculate-img"><img src="img/ruller.png" alt=""></div>
+                <div class="tabs__content active">
+                  <div class="calculate-content">
+                    <div class="calculate-content-box">
+                      <p>Площадь помещения, (м2):</p>
+
+                      <div class="calculate-range">
+                        <div class="btn-range btn-range1 btn-range-minus" data-dir="minus"></div>
+                        <div class="calculate-range-slider calculate-range-slider1"></div>
+                        <div class="btn-range btn-range1 btn-range-plus" data-dir="plus"></div>
+                        <input type="text" name="input-range" class="input-range input-range1" value="100"/>
+                      </div>
+
+                      <div class="gradations"><span>от 1</span><span>до 100</span></div>
+                    </div>
+
+
+                    <div class="calculate-content-box">
+                      <p> Количество углов, (шт):</p>
+
+                      <div class="calculate-range">
+                        <div class="btn-range btn-range2 btn-range-minus" data-dir="minus"></div>
+                        <div class="calculate-range-slider calculate-range-slider2"></div>
+                        <div class="btn-range btn-range2 btn-range-plus" data-dir="plus"></div>
+                        <input type="text" name="input-range" class="input-range input-range2" value="12"/>
+                      </div>
+
+                      <div class="gradations"><span>от 4</span><span>до 16</span></div>
+                    </div>
+
+                    <div class="form-calculate-row">
+                      <div class="form-calculate-column">
+                        <p>Количество труб, (шт):</p>
+                        <input type="text" name="value-item" value="1" class="input-value-item">
+                      </div>
+                      <div class="form-calculate-column">
+                        <p>Количество светильников, (шт):</p>
+                        <input type="text" name="value-item" value="12" class="input-value-item">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calculate-total">
+                    <div class="calculate-total-item">
+                      <p>ИТОГО ПО КОМНАТЕ <sup class="color-accent">*</sup>:</p>
+                      <div class="sum-values">
+                        <p>от <span class="sum-val">20100</span> до <span class="sum-val">29700р.</span></p>
+                      </div>
+                    </div>
+
+                    <div class="calculate-total-item">
+                      <p>ИТОГО ПО ВСЕМ КОМНАТАМ <sup class="color-accent">*</sup>:</p>
+                      <div class="sum-values">
+                        <p>от <span class="sum-val">20100</span> до <span class="sum-val">29700р.</span></p>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent">Заказать замер потолков</button>
+
+                    <div class="description">*Цены указаны с установкой натяжных потолков под ключ</div>
+                  </div>
+                </div>
+
+              </form>
             </div>
           </div>
 
-          <div class="col-12">
-            <form method="post" class="form-calculate">
-
-              <div class="calculate-content">
-                <div class="calculate-content-box">
-                  <p>Площадь помещения, (м2):</p>
-
-                  <div class="calculate-range">
-                    <div class="btn-range btn-range1 btn-range-minus" data-dir="minus"></div>
-                    <div class="calculate-range-slider calculate-range-slider1"></div>
-                    <div class="btn-range btn-range1 btn-range-plus" data-dir="plus"></div>
-                    <input type="text" name="input-range" class="input-range input-range1" value="100"/>
-                  </div>
-
-                  <div class="gradations"><span>от 1</span><span>до 100</span></div>
-                </div>
-
-
-                <div class="calculate-content-box">
-                  <p> Количество углов, (шт):</p>
-
-                  <div class="calculate-range">
-                    <div class="btn-range btn-range2 btn-range-minus" data-dir="minus"></div>
-                    <div class="calculate-range-slider calculate-range-slider2"></div>
-                    <div class="btn-range btn-range2 btn-range-plus" data-dir="plus"></div>
-                    <input type="text" name="input-range" class="input-range input-range2" value="12"/>
-                  </div>
-
-                  <div class="gradations"><span>от 4</span><span>до 16</span></div>
-                </div>
-
-                <div class="form-calculate-row">
-                  <div class="form-calculate-column">
-                    <p>Количество труб, (шт):</p>
-                    <input type="text" name="value-item" value="1" class="input-value-item">
-                  </div>
-                  <div class="form-calculate-column">
-                    <p>Количество светильников, (шт):</p>
-                    <input type="text" name="value-item" value="12" class="input-value-item">
-                  </div>
-                </div>
-              </div>
-
-              <div class="calculate-total">
-                <div class="calculate-total-item">
-                  <p>ИТОГО ПО КОМНАТЕ <sup class="color-accent">*</sup>:</p>
-                  <div class="sum-values">
-                    <p>от <span class="sum-val">20100</span> до <span class="sum-val">29700р.</span></p>
-                  </div>
-                </div>
-
-                <div class="calculate-total-item">
-                  <p>ИТОГО ПО ВСЕМ КОМНАТАМ <sup class="color-accent">*</sup>:</p>
-                  <div class="sum-values">
-                    <p>от <span class="sum-val">20100</span> до <span class="sum-val">29700р.</span></p>
-                  </div>
-                </div>
-
-                <button type="submit" class="btn btn-accent">Заказать замер потолков</button>
-
-                <div class="description">*Цены указаны с установкой натяжных потолков под ключ</div>
-              </div>
-
-              <div class="calculate-img"><img src="img/ruller.png" alt=""></div>
-            </form>
-          </div>
         </div>
       </div>
     </section>

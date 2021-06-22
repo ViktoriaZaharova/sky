@@ -1049,15 +1049,7 @@ footer {
   position: relative;
   width: 100%;
   color: #333333;
-  padding: 30px 30px 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  padding: 30px 30px 26px; }
   .form-calculate button {
     height: 42px;
     max-width: 280px;
@@ -1070,6 +1062,17 @@ footer {
     color: #828282;
     font-size: 10px;
     font-weight: 500; }
+
+.tabs__content {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
+.tabs__content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .calculate-img {
   position: absolute;
@@ -1118,7 +1121,9 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  position: relative;
+  z-index: 1; }
   .rooms .btn {
     max-width: 200px;
     width: 100%;
@@ -1149,7 +1154,8 @@ footer {
   color: #333;
   max-width: 159px;
   width: 100%;
-  height: 32px; }
+  height: 32px;
+  cursor: pointer; }
 
 .form-calculate-row {
   width: 100%;
